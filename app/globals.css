@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-shadow-white {
+    text-shadow:
+      2px 2px 0 #cc0000,
+      -1px -1px 0 #8b0000;
+  }
+
+  .text-shadow-gold {
+    text-shadow:
+      2px 2px 0 #8b0000,
+      0 0 8px rgba(0, 0, 0, 0.5);
+  }
+
+  .text-shadow-red {
+    text-shadow:
+      2px 2px 0 #000,
+      -1px -1px 0 #8b0000;
+  }
+
+  .hero-gradient {
+    background: radial-gradient(
+      ellipse at center,
+      #0d2b99 0%,
+      #0a1f6e 50%,
+      #050f3d 100%
+    );
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
