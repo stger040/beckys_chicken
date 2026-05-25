@@ -21,7 +21,31 @@ export default function Footer() {
 
         <div className="my-8 h-px w-full max-w-xs bg-brand-gold/30" />
 
-        <div className="space-y-2 font-sans text-sm text-white opacity-60">
+        <div className="flex items-center justify-center gap-8 opacity-60">
+          <Image
+            src="/images/logo-heart.jpg"
+            alt=""
+            width={80}
+            height={60}
+            className="h-[60px] w-auto object-contain"
+          />
+          <Image
+            src="/images/logo-heavenly.jpg"
+            alt=""
+            width={120}
+            height={60}
+            className="h-[60px] w-auto object-contain"
+          />
+          <Image
+            src="/images/logo-tagline.jpg"
+            alt=""
+            width={120}
+            height={60}
+            className="h-[60px] w-auto object-contain"
+          />
+        </div>
+
+        <div className="mt-8 space-y-2 font-sans text-sm text-white opacity-60">
           <p>&copy; 2025 Becky&apos;s Chicken LLC. All Rights Reserved.</p>
           <p>Native American Woman Owned Minority Small Business</p>
           <p>Hayward, Wisconsin</p>
@@ -36,6 +60,7 @@ export default function Footer() {
         <p className="mt-2 font-sans text-xs text-white opacity-40">
           beckyschicken.com
         </p>
+        <p className="mt-4 text-xs text-white/20">v1.0.0</p>
       </div>
     </footer>
   );

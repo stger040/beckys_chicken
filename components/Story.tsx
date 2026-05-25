@@ -4,16 +4,16 @@ import NativeBorder from "./NativeBorder";
 export default function Story() {
   return (
     <>
-      <section className="bg-brand-story px-4 py-16 md:py-24">
-        <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-2 md:gap-16">
+      <section id="story" className="bg-brand-story px-4 py-16 md:py-24">
+        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[55%_45%] lg:gap-16">
           <div>
-            <h2 className="font-oswald text-3xl font-bold uppercase tracking-wide text-white md:text-4xl">
+            <h2 className="font-oswald text-3xl font-bold uppercase tracking-wide text-white md:text-4xl lg:text-[56px]">
               An All American First
             </h2>
             <p className="font-dancing mt-4 text-2xl text-brand-gold text-shadow-gold md:text-3xl">
               The First Native American Woman Owned Restaurant Company
             </p>
-            <div className="mt-6 space-y-4 font-sans text-base leading-relaxed text-brand-cream md:text-lg">
+            <div className="mt-6 space-y-4 font-sans text-base leading-relaxed text-brand-cream md:text-lg lg:text-[18px] lg:leading-[1.8]">
               <p>
                 Boozhoo — Greetings! My name is Dr. Rebecca St. Germaine, and
                 this is Becky&apos;s Chicken — a dream that began decades ago
@@ -36,21 +36,21 @@ export default function Story() {
           </div>
 
           <div className="flex flex-col gap-6">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              <Image
-                src="/images/logo-tagline.jpg"
-                alt="Becky's Chicken — Making the world a happier tastier place"
-                width={400}
-                height={200}
-                className="h-auto w-full rounded-lg"
-              />
+            <Image
+              src="/images/logo-tagline.jpg"
+              alt="Becky's Chicken — Making the world a happier tastier place"
+              width={400}
+              height={200}
+              className="h-auto w-full rounded-2xl border-4 border-brand-gold shadow-2xl"
+            />
 
-              <div className="flex aspect-[3/4] items-center justify-center rounded-lg border-2 border-brand-gold bg-[#6B1A00] p-4 text-center">
-                <p className="font-dancing text-lg italic text-brand-gold text-shadow-gold md:text-xl">
-                  Dr. Rebecca St. Germaine — Portrait Coming Soon
-                </p>
-              </div>
-            </div>
+            <Image
+              src="/images/Becky.jpg"
+              alt="Dr. Rebecca St. Germaine — Becky"
+              width={400}
+              height={500}
+              className="w-full rounded-2xl border-4 border-brand-gold object-cover shadow-2xl"
+            />
 
             <p className="font-dancing text-center text-xl italic text-brand-gold text-shadow-gold md:text-2xl">
               Zaagaasigekwe — The Rays of the Sun That Shines Out Lady
